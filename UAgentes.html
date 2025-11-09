@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Agente</title>
+</head>
+<body>
+  <h2>Actualizar Información del Agente</h2>
+
+  <form method="post" action="editarAgente.php">
+      <label for="id">ID del Agente:</label><br>
+      <input type="number" name="id" id="id" required><br><br>
+
+      <label for="idusuario">ID del Usuario (vinculado):</label><br>
+      <input type="number" name="idusuario" id="idusuario" required><br><br>
+
+      <label for="codigo">Código del Agente:</label><br>
+      <input type="text" name="codigo" id="codigo" required><br><br>
+
+      <label for="especialidad">Especialidad:</label><br>
+      <input type="text" name="especialidad" id="especialidad"><br><br>
+
+      <label for="experiencia">Años de Experiencia:</label><br>
+      <input type="number" name="experiencia" id="experiencia"><br><br>
+
+      <label for="zona">Zona Asignada:</label><br>
+      <input type="text" name="zona" id="zona"><br><br>
+
+      <label for="comision">Comisión (%):</label><br>
+      <input type="number" step="0.01" name="comision" id="comision"><br><br>
+
+      <label for="estado">Estado:</label><br>
+      <select name="estado" id="estado" required>
+          <option value="Activo">Activo</option>
+          <option value="Inactivo">Inactivo</option>
+      </select><br><br>
+
+      <label for="fecha">Fecha de Registro:</label><br>
+      <input type="date" name="fecha" id="fecha" required><br><br>
+
+      <button type="submit">Actualizar Agente</button>
+  </form>
+</body>
+</html>

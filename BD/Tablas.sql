@@ -1,13 +1,13 @@
 -- se guardan los datos de las cuentas
-CREATE TABLE Usuarios (
-    IDUsuario INT PRIMARY KEY AUTO_INCREMENT,
-    NombreCompleto VARCHAR(120) NOT NULL,
-    Correo VARCHAR(160) NOT NULL UNIQUE,
-    Telefono VARCHAR(25),
-    Contrasena VARCHAR(255) NOT NULL,
-    Rol VARCHAR(20) NOT NULL, -- Cliente, Asesor, Admin
-    FechaRegistro DATE NOT NULL
-);
+    CREATE TABLE Usuarios (
+        IDUsuario INT PRIMARY KEY AUTO_INCREMENT,
+        NombreCompleto VARCHAR(120) NOT NULL,
+        Correo VARCHAR(160) NOT NULL UNIQUE,
+        Telefono VARCHAR(25),
+        Contrasena VARCHAR(255) NOT NULL,
+        Rol VARCHAR(20) NOT NULL, -- Cliente, Asesor, Admin
+        FechaRegistro DATE NOT NULL
+    );
  -- tipos de propiedad: casa, departamento, terreno, oficina etc, para clasificar las propiedades se le asigna un numero
  -- algo asi: 1 - Casa, 2 - Departamento, 3 - Terreno, 4 - Oficina
 CREATE TABLE TiposPropiedad (
@@ -140,7 +140,6 @@ FOREIGN KEY (IDUsuario) REFERENCES Usuarios(IDUsuario);
 --estas 2 aun siento que son algo opcionales, valoraciones por si los usuarios dejan opiniones para mostrarlas en la pagina
 -- y la de imagenes para que cada propiedad tenga varias fotos
 --pero la de imagenes las va a tener que sacar de un servidor si la maestra pide que lo subamos a algun lado
-
 
 
 CREATE TABLE Valoraciones (

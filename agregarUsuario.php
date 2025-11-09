@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt === false) {
         // Si la plantilla SQL tiene un error de sintaxis, fallará aquí
-        echo "❌ Error al preparar la consulta: " . mysqli_error($Con);
+        echo "Error al preparar la consulta: " . mysqli_error($Con);
     } else {
 
         //se ponen los valores en la plantilla dentro de los "?", cada ? es un parametro
@@ -37,9 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Ejecutar la consulta preparada
         if (mysqli_stmt_execute($stmt)) {
-            echo "✅ Usuario agregado correctamente";
+            echo "Usuario agregado correctamente";
         } else {
-            echo "❌ Error al ejecutar la consulta: " . mysqli_stmt_error($stmt);
+            echo "Error al ejecutar la consulta: " . mysqli_stmt_error($stmt);
         }
         // Cerrar la declaracion preparada
         mysqli_stmt_close($stmt);

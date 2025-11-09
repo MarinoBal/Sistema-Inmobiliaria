@@ -54,7 +54,7 @@ $result = mysqli_query($Con, $sql);
     </style>
 </head>
 <body>
-    <h2>🏘️ Propiedades disponibles</h2>
+    <h2>Propiedades disponibles</h2>
 
     <div class="contenedor">
         <?php while ($prop = mysqli_fetch_assoc($result)) { ?>

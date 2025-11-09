@@ -29,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     if (mysqli_stmt_execute($stmt)) {
-        echo "✅ Propiedad agregada correctamente";
+        echo "Propiedad agregada correctamente";
     } else {
-        echo "❌ Error: " . mysqli_stmt_error($stmt);
+        echo "Error: " . mysqli_stmt_error($stmt);
     }
 
     mysqli_stmt_close($stmt);

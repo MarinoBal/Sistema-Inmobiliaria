@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Propiedad</title>
+</head>
+<body>
+  <h2>Actualizar Propiedad</h2>
+
+  <form method="post" action="editarPropiedad.php">
+      <label for="id">ID de la Propiedad:</label><br>
+      <input type="number" name="id" id="id" required><br><br>
+
+      <label for="titulo">Título:</label><br>
+      <input type="text" name="titulo" id="titulo" required><br><br>
+
+      <label for="descripcion">Descripción:</label><br>
+      <textarea name="descripcion" id="descripcion" rows="4" cols="50"></textarea><br><br>
+
+      <label for="precio">Precio:</label><br>
+      <input type="number" name="precio" id="precio" step="0.01" required><br><br>
+
+      <label for="direccion">Dirección:</label><br>
+      <input type="text" name="direccion" id="direccion" required><br><br>
+
+      <label for="ciudad">Ciudad:</label><br>
+      <input type="text" name="ciudad" id="ciudad" required><br><br>
+
+      <label for="colonia">Colonia:</label><br>
+      <input type="text" name="colonia" id="colonia"><br><br>
+
+      <label for="superficie">Superficie (m²):</label><br>
+      <input type="number" name="superficie" id="superficie"><br><br>
+
+      <label for="terreno">Terreno (m²):</label><br>
+      <input type="number" name="terreno" id="terreno"><br><br>
+
+      <label for="habitaciones">Habitaciones:</label><br>
+      <input type="number" name="habitaciones" id="habitaciones"><br><br>
+
+      <label for="banos">Baños:</label><br>
+      <input type="number" name="banos" id="banos"><br><br>
+
+      <label for="estacionamientos">Estacionamientos:</label><br>
+      <input type="number" name="estacionamientos" id="estacionamientos"><br><br>
+
+      <label for="estado">Estado:</label><br>
+      <select name="estado" id="estado" required>
+          <option value="Disponible">Disponible</option>
+          <option value="Rentada">Rentada</option>
+          <option value="Vendida">Vendida</option>
+      </select><br><br>
+
+      <label for="fecha">Fecha de Publicación:</label><br>
+      <input type="date" name="fecha" id="fecha" required><br><br>
+
+      <label for="idtipo">ID del Tipo de Propiedad:</label><br>
+      <input type="number" name="idtipo" id="idtipo" required><br><br>
+
+      <label for="idasesor">ID del Asesor:</label><br>
+      <input type="number" name="idasesor" id="idasesor" required><br><br>
+
+      <button type="submit">Actualizar Propiedad</button>
+  </form>
+</body>
+</html>

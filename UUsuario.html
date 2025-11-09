@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Usuario</title>
+</head>
+<body>
+  <h2>Editar Usuario</h2>
+
+  <form method="post" action="editarUsuario.php">
+      <label for="id">ID del Usuario (Para la búsqueda):</label><br>
+      <input type="number" name="id" id="id" required><br><br>
+
+      <label for="nombre">Nuevo nombre:</label><br>
+      <input type="text" name="nombre" id="nombre" required><br><br>
+
+      <label for="correo">Nuevo Correo:</label><br>
+      <input type="email" name="correo" id="correo" required><br><br>
+
+      <label for="telefono">Teléfono:</label><br>
+      <input type="text" name="telefono" id="telefono"><br><br>
+
+      <label for="contrasena">Nueva contraseña:</label><br>
+      <input type="password" name="contrasena" id="contrasena"><br><br>
+
+      <label for="rol">Modificar Rol:</label><br>
+      <select name="rol" id="rol" required>
+          <option value="Cliente">Cliente</option>
+          <option value="Asesor">Asesor</option>
+          <option value="Admin">Administrador</option>
+      </select><br><br>
+
+      <button type="submit">Actualizar</button>
+  </form>
+</body>
+</html>

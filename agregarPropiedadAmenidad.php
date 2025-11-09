@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $amenidades = $_POST['idAmenidades']; // array de IDs seleccionados
 
     if (empty($idPropiedad) || empty($amenidades)) {
-        die("⚠️ Debes seleccionar una propiedad y al menos una amenidad.");
+        die("Debes seleccionar una propiedad y al menos una amenidad.");
     }
 
     // Consulta preparada
@@ -32,6 +32,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_stmt_close($stmt);
     desconectar($Con);
 
-    echo "✅ Se asignaron $insertadas amenidad(es) correctamente a la propiedad.";
+    echo "Se asignaron $insertadas amenidad(es) correctamente a la propiedad.";
 }
 ?>

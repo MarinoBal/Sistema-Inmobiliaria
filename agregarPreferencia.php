@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fecha = date("Y-m-d");
 
     if (empty($idUsuario)) {
-        die("⚠️ Debes seleccionar un cliente.");
+        die("Debes seleccionar un cliente.");
     }
 
     // INSERT correcto (10 columnas)
@@ -31,9 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if (mysqli_stmt_execute($stmt)) {
-        echo "✅ Preferencia registrada correctamente.";
+        echo "Preferencia registrada correctamente.";
     } else {
-        echo "❌ Error: " . mysqli_stmt_error($stmt);
+        echo "Error: " . mysqli_stmt_error($stmt);
     }
 
     mysqli_stmt_close($stmt);
